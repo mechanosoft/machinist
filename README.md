@@ -66,25 +66,25 @@ What JFLAP does is provide you with an automata editor that you can use to build
 
 So this tool, which is tentatively called MACHINIST, would have the following non-exhaustive list of major features:
 
-- Visual state machine editor
+- **Visual state machine editor**
     - This part is similar to JFLAP, but nicer looking, more user-friendly
     - The controls in JFLAP are very clunky - you get used to it, but there is a lot of room for improvement in the state machine editor
     - Feature Idea: group edit a state machine. Share a link with your colleagues and work on the machine together online. Similar to Miro or Google Docs where you can all edit at the same time.
-- State machine simulation
+- **State machine simulation**
     - Same as JFLAP, but nicer + user friendly, it would have easier ways to add your inputs than the JFLAP tool (add through the UI, via file)
     - Step through features for debugging a state machine, inspecting the machine as it runs
     - JFLAP does this well, but again it is quite clunky to use
-- Cloud-connected
+- **Cloud-connected**
     - Machines can be saved in cloud storage or exported as a file.
     - Share a state machine with your colleagues (generate a share link, send a share email, etc.)
-- Import machines from jflap
+- **Import machines from jflap**
     - JFLAP has a file format for storing state machines, you can import a machine in that format.
-- Educational problems
+- **Educational problems**
     - Hackerrank-style problem sets where you are shown a problem description and then need to create a state machine that solves the problem
     - Similar to these kinds of problems: https://www.hackerrank.com/domains/algorithms
     - Can have points, badges, etc. for solving problems
-- Export state machines in different file formats, or as high quality JPEG, PNG, PDF, etc.
-- Auto-generate inputs for testing a state machine
+- **Export state machines in different file formats, or as high quality JPEG, PNG, PDF, etc.**
+- **Auto-generate inputs for testing a state machine**
     - The app would have some utilities for creating input strings that you can use to test state machines
     - Also, when you are solving state machine problems, the tool will test your machine with many inputs to determine correctness and whether or not to award a point for that problem.
 
