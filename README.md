@@ -37,21 +37,20 @@ For the stack, here is what I was thinking (once again, I'm open to ideas):
   components 🧐)
 - For component lib, there is also: <https://semantic-ui.com/> which is quite
   pleasant to look at.
+- The web app will look and feel like a modernized version of JFLAP. Sort of similar to Drawio, or Miro, or Figma. Those kinds of apps would be what we are aiming for.
+- It will have a big canvas on which you can build your network of nodes.
+- You will be able to drag nodes around the page.
+- Floating sidebar with options
+- You can run state machines with different inputs, generate random inputs, walk through execution of the machine as it processes an input.
 
 ## BACKEND
-- I recently discovered a really cool new framework for doing serverless
-  functions; its called "Serverless Framework" (really uncreative name):
-  <https://github.com/serverless/serverless>
-- If you are not familiar, have a look at an AWS service called Lambda Functions
-  (<https://docs.aws.amazon.com/lambda/latest/dg/welcome.html>).
-- The lambda functions are sick tech, and they are much much cheaper and more
-  scalable than running our own docker containers. Plus you can do them in any
-  language you want.
-- My recommendation: we use serverless as the first choice for any backend work,
-  and then add on other types of deployments as needed.
-- Otherwise we can always do the container thing with Amazon ECS or with
-  Kubernetes.
-- I wanted to do the backend microservice style.
+- We will create multiple web services for the app, in a microservice-style architecture.
+- The core services will be deployed on a Kubernetes cluster running on AWS or Azure.
+- We will make use of other cloud services such as Lambda Functions, message queues, databases, and more
+- There will be lots of cloud and devops work to do
+- We will explore how to containerize services, how to deploy and scale these services, how to coordinate communication between services, and more
+- We will make use of Infrastructure as Code (IaaC) tools like Terraform and Ansible.
+- We will write helm charts for our kubernetes projects, in order to easily deploy them.
 
 ---
 
@@ -79,7 +78,7 @@ So this tool, which is tentatively called MACHINIST, would have the following no
     - Share a state machine with your colleagues (generate a share link, send a share email, etc.)
 - **Import machines from jflap**
     - JFLAP has a file format for storing state machines, you can import a machine in that format.
-- **Educational problems**
+- **Hackerrank style educational problems**
     - Hackerrank-style problem sets where you are shown a problem description and then need to create a state machine that solves the problem
     - Similar to these kinds of problems: https://www.hackerrank.com/domains/algorithms
     - Can have points, badges, etc. for solving problems
